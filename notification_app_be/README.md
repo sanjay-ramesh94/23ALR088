@@ -42,6 +42,10 @@ This backend fetches depot and vehicle task data from the evaluation APIs.
     }
     ```
 
+- `GET /api/priority-notifications?limit=10&token=<token>`
+  - Fetches notifications from the evaluation service and returns the top priority items.
+  - The response includes `total` and `top` ranked notifications.
+
 - `GET /api/health`
   - Returns a simple health check.
 
