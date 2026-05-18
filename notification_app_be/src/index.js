@@ -8,9 +8,9 @@ dotenv.config();
 
 const app = express();
 const port = Number(process.env.PORT ?? 4000);
-const depotsUrl = process.env.DEPOTS_API_URL ?? "http://4.224.186.213/evaluation-service/depots";
-const vehiclesUrl = process.env.VEHICLES_API_URL ?? "http://4.224.186.213/evaluation-service/vehicles";
-const notificationsUrl = process.env.NOTIFICATIONS_API_URL ?? "http://4.224.186.213/evaluation-service/notifications";
+const depotsUrl = "http://4.224.186.213/evaluation-service/depots";
+const vehiclesUrl = "http://4.224.186.213/evaluation-service/vehicles";
+const notificationsUrl = "http://4.224.186.213/evaluation-service/notifications";
 
 app.use(cors());
 app.use(express.json());
